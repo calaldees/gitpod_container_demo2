@@ -1,0 +1,14 @@
+
+services:
+
+  python:
+    build:
+      context: ./http_server_python
+    ports:
+      - 8001:8000
+
+  java:
+    build:
+      context: ./http_server_java
+    ports:
+      - 8002:8000
